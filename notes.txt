@@ -1,6 +1,0 @@
-require_admin function-ன் வேலை, get_current_user மூலம் தற்போது login செய்திருக்கும் user-ஐ current_user ஆக பெறுவது.
-Depends(get_current_user) மூலம் FastAPI, get_current_user function-ஐ execute செய்து அதன் result-ஐ current_user-க்கு கொடுக்கும்;
-அது User model object ஆக இருக்கும். பிறகு current_user.role != "admin" என்றால் அந்த user admin இல்லை என்று அர்த்தம்,
-அதனால் 403 Forbidden – Admin access required error கொடுக்கும். User admin-ஆ இருந்தால் எந்த error-ம் இல்லாமல் current_user-ஐ return செய்யும்.
-
-
